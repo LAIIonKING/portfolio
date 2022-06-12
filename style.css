@@ -1,0 +1,31 @@
+/* Global */
+:root {
+    /* Color */
+    --color-white: #ffffff;
+    --color-light-white: #eeeeee;
+    --color-dark-white: #bdbdbd;
+    --color-blue: #1976d2;
+    --color-darkblue: #004ba0;
+    --color-lightblue: #63a4ff;
+    --color-grey: #4d4d4d;
+    --color-yellow: #fff59d;
+    --color-black: #000000;
+
+    /* Font size */
+    --font-large: 48px;
+    --font-medium:28px;
+    --font-regular: 18px;
+    --font-small: 16px;
+    --font-micro: 14px;
+
+    /* Font wegit */
+    --weight-bold: 700;
+    --weight-semi-bold: 600;
+    --weight-regular: 400;
+
+    /* Size */
+    
+
+
+
+}
