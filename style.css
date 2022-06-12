@@ -32,9 +32,10 @@
     box-sizing: border-box;
 }
 
+
 body{
     margin: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', 'IBM Plex Sans KR', sans-serif;
     cursor: default;
 }
 
@@ -46,6 +47,13 @@ a{
 ul {
     list-style:none;
     padding-left: 0;
+}
+
+button {
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline:none:
 }
 
 /* Typography */
@@ -108,4 +116,59 @@ p{
 .navbar__menu__item:hover {
     background-color: var(--color-darkblue);
     border-radius: 4px;
+}
+
+/* Home */
+#home {
+    background-color: var(--color-blue);
+    padding: 40px;
+}
+
+.home__avartar{
+    width: 250px;
+    float:left;
+    margin-right: 40px;
+}
+
+.home__title{
+    font-size: 90px;
+    margin: 0;
+    color: var(--color-white)
+}
+
+.home__title1{
+    text-align: left;
+    display: block;
+}
+
+.home__title2{
+    text-align: center;
+    display: block;
+}
+
+.home__title3{
+    display: block;
+    text-align: right;
+}
+
+.home__description{
+    color:var(--color-black);
+    text-align: right;
+}
+
+.home__contact{
+    display:flex;
+    justify-content:center;
+    font-size: 12px;
+    font-weight: 700;
+    color:var(--color-white);
+    margin: 24px 0px 0px;
+    margin-left:auto;
+    padding:32px 8px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.home__contact:hover{
+    background-color: var(--color-darkblue);
 }
