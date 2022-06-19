@@ -10,3 +10,12 @@ document.addEventListener('scroll', () => {
         navbar.classList.remove('navbar__dark');
     }
 }) 
+
+//scrolling smooth when tapping on the navbarmenuitem
+const navbarMenu = document.querySelector('.navbar__menu');
+document.addEventListener('click', (event) => {
+    console.log(event.target.dataset.link);
+    const link = event.target.dataset.link;
+    const scrollTo = document.querySelector(link);
+    scrollTo.scrollIntoView({behavior: "smooth"});
+})
