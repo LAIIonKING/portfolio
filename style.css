@@ -91,21 +91,31 @@ p{
 
 /* Navbar */
 #navbar {
+    position:fixed;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    background-color: var(--color-blue);
+    background-color: transparent;
     align-items: center;
     color: var(--color-white);
-    padding: 4px 15px 4px 15px;
+    padding: 8px;
+    transition: all var(--animation-duration) ease-in-out;
+}
+
+#navbar.navbar__dark{
+    background-color: var(--color-blue);
+    padding: 8px;
 }
 
 .navbar__menu{
     display: flex;
+    margin: 3px;
 }
 
 .navbar__logo{
     font-size: var(--font-medium);
     font-weight: var(--weight-semi-bold);
+    margin-left: 12px;
 }
 .navbar__menu__item {
     padding: 8px 12px;
@@ -131,6 +141,7 @@ p{
 #home {
     background-color: var(--color-blue);
     padding: 40px;
+    padding-top: 100px;
 }
 
 .home__avartar{
