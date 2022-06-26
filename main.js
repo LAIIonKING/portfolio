@@ -13,7 +13,7 @@ document.addEventListener('scroll', () => {
 
 //scrolling smooth when tapping on the navbarmenuitem
 const navbarMenu = document.querySelector('.navbar__menu');
-document.addEventListener('click', (event) => {
+navbarMenu.addEventListener('click', (event) => {
     const link = event.target.dataset.link;
     scrollIntoView(link);
 })
@@ -31,7 +31,16 @@ topbtn.addEventListener('click', () => {
     scrollIntoView('#home');
 });
 
+const workBtnContainer = document.querySelector('.work__categories');
+const projectContainer = document.querySelector('.work__projects');
+const projects = document.querySelectorAll('project');
+workBtnContainer.addEventListener('click', (e) =>{
+    const filter = e.target.dataset.filter;
+    console.log(filter);
+});
+
+
 function scrollIntoView(selector){
     const scrollTo = document.querySelector(selector);
     scrollTo.scrollIntoView({behavior:'smooth'});
-}
+};
