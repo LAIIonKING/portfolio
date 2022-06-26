@@ -37,6 +37,7 @@ const projects = document.querySelectorAll('project');
 workBtnContainer.addEventListener('click', (e) =>{
     const filter = e.target.dataset.filter;
     console.log(filter);
+    if()
 });
 
 
